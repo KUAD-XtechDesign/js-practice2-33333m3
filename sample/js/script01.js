@@ -13,9 +13,10 @@ $(function(){
         $("#content").text(txt);
     }
 
-    function samTwo(t1,t2){
-        $("#content").text(t1 + t2);
+    function samTwo(arg1,arg2){
+        $("#content").text(arg1 + arg2);
     }
+
 
     $("#button01").on("click",function(){
       seyhello();
@@ -30,15 +31,14 @@ $(function(){
     })
     
     $("#button04").on("click",function(){
-      $("#content").text(num1 + num2);
+      samTwo(num1 + num2)
     })
-    
-    // + - * /
     
     $("#button05").on("click",function(){
-      num1 = num1 + 10;
-      //$("#content").text(num1);
-    
-      $("#ball").css("margin-left",num1+'px')
+      samTwo(txt1,txt2)
+      samTwo(num1,num2)
     })
+
+
+
 })
